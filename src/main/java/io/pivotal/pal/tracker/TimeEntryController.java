@@ -39,6 +39,6 @@
         @DeleteMapping("{TIME_ENTRY_ID}")
         public ResponseEntity<TimeEntry> delete(@PathVariable(name = "TIME_ENTRY_ID")long timeEntryId) {
             timeEntryRepository.delete(timeEntryId);
-            return new ResponseEntity<>(HttpStatus.OK);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
     }

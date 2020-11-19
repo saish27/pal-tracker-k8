@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 @Component
 public class InMemoryTimeEntryRepository implements TimeEntryRepository{
     Map<Long,TimeEntry> timeEntries = new HashMap<>();
-    private static long count = 1;
+    private long count = 1;
 
     public TimeEntry create(TimeEntry timeEntry) {
         //if(!timeEntries.containsKey(timeEntry.getId())){
