@@ -10,10 +10,11 @@
     @RestController
     @RequestMapping("/time-entries")
     public class TimeEntryController {
+
         private TimeEntryRepository timeEntryRepository;
 
         @Autowired
-        public TimeEntryController(TimeEntryRepository timeEntryRepository) {
+        public TimeEntryController(  TimeEntryRepository timeEntryRepository) {
             this.timeEntryRepository = timeEntryRepository;
         }
 
